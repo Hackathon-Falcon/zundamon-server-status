@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML, CSS, JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class='siteHeader'>
+
+        <div class='container'>
+          <p class='siteHeader__title'>Server status page</p>
+        </div>
+      </header>
+      
+      <div class='container'>
+      
+        <section class='ongoingIssues'>
+          <a href='/issue/ccc9a970-98dc-4f10-afa5-d822d511172d' class='issueBanner issueBanner--monitoring'>
+            <p class='issueBanner__state'>Monitoring</p>
+            <h2>Network Connectivity Issues</h2>
+            <p class='issueBanner__time'>last updated <time id="time"></time></p>
+          </a>
+        </section>
+      
+        <section class='serviceGroup'>
+          <ul class='serviceList serviceGroup__list'>
+            <li class='serviceList__item'>
+              <p class='serviceList__status'><span class="ok"> NO </span></p>
+              <p class='serviceList__name'>
+                zundamon-server-status
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+      <footer class='siteFooter'>
+        <div class='container'>
+        </div>
+      </footer>
+  <script src="script.js"></script>
+</body>
+</html>
